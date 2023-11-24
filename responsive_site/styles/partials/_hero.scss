@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  gap: 7.5rem;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 2rem 17.5rem;
+
+  &__details {
+    flex-basis: 50%;
+    h1 {
+      font-size: $fontsize__mainTheme;
+      color: $white;
+      font-weight: 700;
+      line-height: 7rem; /* 125% */
+      letter-spacing: -1.12px;
+    }
+
+    p {
+      color: $light_white;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 3.2rem 0;
+    }
+
+    &-buttons {
+      display: flex;
+      gap: 3.2rem;
+    }
+
+    &-stats {
+      display: flex;
+      padding-top: 4rem;
+      gap: 5.2rem;
+      color: $light_white;
+
+      h4 {
+        font-size: 3.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__images {
+    flex-basis: 50%;
+    position: relative;
+    // &-phone {
+    //   filter: blur(20px);
+    // }
+    &-mastercard {
+      position: absolute;
+      top: 154px;
+      left: 197px;
+    }
+  }
+}
+
+.phone {
+  width: 268px;
+  height: 542px;
+}

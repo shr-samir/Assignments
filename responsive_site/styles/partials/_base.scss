@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Plus Jakarta Sans;
+}
+
+.app {
+  width: 100vw;
+  // &__wrapper {
+  //   width: 100%;
+  //   max-width: 120rem;
+  //   margin: 0 auto;
+  // }
+}
+
+.app__wrapper-gradient {
+  background: $gradient;
+}
+
+main {
+  width: 100%;
+  // max-width: 120rem;
+  margin: 0 auto;
+}

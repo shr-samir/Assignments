@@ -1,0 +1,27 @@
+//general for all button
+.button {
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: $white;
+  border: none;
+  color: $light_white;
+  padding: 2.4rem 3.2rem;
+
+  &__signup {
+    padding: 1.2rem 2.4rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $white;
+  }
+
+  &__openAC {
+    color: #110C64;
+    background-color: $white;
+  }
+
+  &__learnMore {
+    background-color: transparent;
+    border: .5px solid rgba(255, 255, 255, 0.20);
+  }
+}
+
