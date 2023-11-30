@@ -1,0 +1,89 @@
+.logo__underline {
+        width: 100px;
+        height: 3px;
+        background-color: $greenish-blue;
+      }
+
+.header {
+  max-width: 1440px; //given width of design
+  margin: 0 auto;
+  padding: 41px 70px 0 70px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    //padding thapna sakxu
+
+    &--logo {
+      
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    &--nav {
+      ul {
+        display: flex;
+        gap: 25px;
+        list-style-type: none;
+        font-size: 24px;
+        font-weight: 500;
+        li {
+          a {
+            text-decoration: none;
+            color: $grey;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    &--menuIcon {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .header {
+    &__wrapper {
+      &--logo {
+        h1 {
+          font-size: 25.5px;
+        }
+
+        &__underline {
+          width: 79.681px;
+          height: 2.39px;
+        }
+      }
+      &--nav,
+      &--btnStatus {
+        display: none;
+      }
+
+      &--menuIcon {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+
+    &__wrapper {
+      &--logo {
+        h1 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
