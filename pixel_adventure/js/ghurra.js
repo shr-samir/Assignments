@@ -1,5 +1,5 @@
 const ghurra_const = {
-    source:'assets/Traps/Saw/On(38x38).png',
+    source:'./assets/Traps/Saw/On(38x38).png',
     // 360,
     pos_x: 195,
     // canvas_height - 190,
@@ -12,7 +12,7 @@ const ghurra_const = {
     moveSpeed:2
 }
 const ghurraImg = new Sprite(
-    'assets/Traps/Saw/On(38x38).png',
+    './assets/Traps/Saw/On(38x38).png',
     // 360,
     195,
     // canvas.height - 190,
