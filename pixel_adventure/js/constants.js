@@ -41,123 +41,122 @@ const keys = {
 // to delay frames
 const staggerFrames = 3
 
-
-let collectedFruits = [];
+let collectedFruits = []
 
 let fruits = [
   {
     name: 'apple',
-     sprite : function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Apple.png',
+        './assets/Items/Fruits/Apple.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
-      ) 
-    }
+        32 * 1.5,
+        32 * 1.5
+      )
+    },
   },
   {
     name: 'banana',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Bananas.png',
+        './assets/Items/Fruits/Bananas.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
-    {
+  {
     name: 'orange',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Orange.png',
+        './assets/Items/Fruits/Orange.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
   {
     name: 'pineapple',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Pineapple.png',
+        './assets/Items/Fruits/Pineapple.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
   {
     name: 'strawberry',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Strawberry.png',
+        './assets/Items/Fruits/Strawberry.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
   {
     name: 'watermelon',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Melon.png',
+        './assets/Items/Fruits/Melon.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
   {
     name: 'kiwi',
-    sprite: function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Kiwi.png',
+        './assets/Items/Fruits/Kiwi.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
+        32 * 1.5,
+        32 * 1.5
       )
-    }
+    },
   },
   {
     name: 'cherries',
-    sprite : function(x,y){
+    sprite: function (x, y) {
       return new Sprite(
-        '../../assets/Items/Fruits/Cherries.png',
+        './assets/Items/Fruits/Cherries.png',
         x,
         y,
         32,
         32,
-        32*1.5,
-        32*1.5
-      ) 
-    }
+        32 * 1.5,
+        32 * 1.5
+      )
+    },
   },
-];
+]
 
 //Need to change this to dynamic
 
@@ -186,58 +185,60 @@ let fruitsCordinates = [
     index: 1,
     x1: 284,
     y1: 375,
-  },  
+  },
   {
     index: 1,
     x1: 348,
     y1: 305,
   },
   {
-    index : 0,
+    index: 0,
     x1: 450,
     y1: 250,
   },
   {
-    index : 0,
+    index: 0,
     x1: 520,
     y1: 250,
   },
   {
-    index : 0,
+    index: 0,
     x1: 590,
     y1: 250,
   },
   {
     index: 3,
-    x1:700,
-    y1:200
+    x1: 700,
+    y1: 200,
   },
   {
     index: 3,
-    x1:770,
-    y1:200
+    x1: 770,
+    y1: 200,
   },
   {
     index: 3,
-    x1:925,
-    y1:250
-  },{
+    x1: 925,
+    y1: 250,
+  },
+  {
     index: 4,
     x1: 1000,
-    y1: 400
+    y1: 400,
   },
   {
     index: 4,
     x1: 1070,
-    y1: 500
+    y1: 500,
   },
   {
     index: 4,
     x1: 1000,
-    y1: 500
-  },{
+    y1: 500,
+  },
+  {
     index: 4,
     x1: 1140,
-    y1: 500
-  }
+    y1: 500,
+  },
 ]
