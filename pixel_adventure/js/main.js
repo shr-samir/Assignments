@@ -45,6 +45,7 @@ function animate() {
   requestAnimationFrame(animate)
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   // ctx.drawImage(mapImage, 455, 0, 4000, 720, 0, 0, canvas.width, canvas.height)
+  console.log('mapImage');
   ctx.drawImage(mapImage, 0, 0)
 
   // ctx.translate(camera.position.x, 0)

@@ -1,6 +1,6 @@
 // let bulletTimer = 25
 const plantParam = {
-  src: '../assets/Enemies/Plant/idle.png',
+  src: './assets/Enemies/Plant/idle.png',
   width: 44,
   height: 42,
   position: {
@@ -67,7 +67,7 @@ function plant(plantImg, bulletImg) {
   }
   if (!player_collision_check) {
     if (boundaryCollisionLeft_not_object(player, plantImg)) {
-      player.spriteImg.src = 'assets/main_characters/virtual_guy/hit.png'
+      player.spriteImg.src = './assets/main_characters/virtual_guy/hit.png'
       player.totalFrame = 7
       player.position.y -= 150
       spriteSlider(player)
@@ -77,7 +77,7 @@ function plant(plantImg, bulletImg) {
   }
   if (!plant_collision_check) {
     if (boundaryCollisionBottom_not_object(player, plantImg)) {
-      plantImg.spriteImg.src = 'assets/Enemies/Plant/hit.png'
+      plantImg.spriteImg.src = './assets/Enemies/Plant/hit.png'
       plantImg.totalFrame = 5
       spriteSlider(plantImg)
       plantImg.position.y -= 50 // Update the y position
@@ -100,7 +100,7 @@ function plant(plantImg, bulletImg) {
 
 function createBullet(plantImg) {
   const bulletImg = new Sprite(
-    '../assets/Enemies/Plant/bullet.png',
+    './assets/Enemies/Plant/bullet.png',
     plantImg.position.x, // plant x - bullet
     // canvas.height - 160,
     plantImg.position.y + 20,

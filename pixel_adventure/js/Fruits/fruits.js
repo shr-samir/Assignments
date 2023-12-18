@@ -23,7 +23,7 @@ function FruitCollisionCheck(player,spriteInstance){
   if(onCollision(player,spriteInstance))
   {
     collectedFruits.push(spriteInstance);
-    spriteInstance.spriteImg.src = "../../assets/Items/Fruits/Collected.png"
+    spriteInstance.spriteImg.src = "./assets/Items/Fruits/Collected.png"
     spriteInstance.totalFrame = 6
 
   }

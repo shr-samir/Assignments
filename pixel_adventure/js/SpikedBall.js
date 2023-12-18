@@ -3,7 +3,7 @@
 function drawSpikeBall(x, y){
      const spike_ball = new Sprite(
      
-          '../assets/Traps/Spiked Ball/Spiked Ball.png',
+          './assets/Traps/Spiked Ball/Spiked Ball.png',
           // 360,
           x,
           // canvas.height - 190,
@@ -18,7 +18,7 @@ function drawSpikeBall(x, y){
 
 function drawSpikeChain(x, y){
      const spike_chain = new Sprite(
-          '../assets/Traps/Spiked Ball/Chain.png',
+          './assets/Traps/Spiked Ball/Chain.png',
           // 360,
           x,
           // canvas.height - 190,

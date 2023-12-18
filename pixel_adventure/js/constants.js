@@ -13,18 +13,18 @@ let positionInSprite
 let level = 1
 const mapImage = new Image()
 if (level === 3) {
-  mapImage.src = '../assets/mapXL-3.png'
+  mapImage.src = './assets/mapXL-3.png'
 } else if (level === 2) {
-  mapImage.src = '../assets/mapXL-2.png'
+  mapImage.src = './assets/mapXL-2.png'
 } else {
   level = 1
-  mapImage.src = '../assets/mapXL-1.png'
+  mapImage.src = './assets/mapXL-1.png'
 }
 // mapImage.src = '../assets/mapXL.png'
 
-mapImage.onload = () => {
-  ctx.drawImage(mapImage, 0, 0)
-}
+// mapImage.onload = () => {
+//   ctx.drawImage(mapImage, 0, 0)
+// }
 
 const keys = {
   right: {
